@@ -1,6 +1,6 @@
 Cpp Makefile Tutorial
 GCC/Clang Compiler Steps
-Compilation (Assembling)
+Compilation
 
     Checks the C/C++ language syntax for error
     Generates object files
@@ -21,8 +21,8 @@ Compiler Flags
     Includes: -I
     Warnings: -Wall -Wextra -Wpedantic -Wconversion
 
-Makefile Commands of the Template
-Makefile Variables
+akefile Commands of the Template
+akefile Variables
 
 Convention is naming in upper snake_case.
 
@@ -32,7 +32,7 @@ Variables can be called by $(VARIABLE_NAME)
 
   $(VARIABLE_NAME)
 
-Makefile Targets
+akefile Targets
 
 Convention is naming in snake_case or camelCase.
 
@@ -43,7 +43,7 @@ Targets can be called by the make command.
 
   make targetName
 
-Makefile Phony Target
+akefile Phony Target
 
 Sometimes you want your Makefile to run commands that do not represent files, for example the "clean" target. You may potentially have a file named clean in your main directory. In such a case Make will be confused because by default the clean target would be associated with this file and Make will only run it when the file doesn't appear to be up-to-date.
 
